@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#434343">
+
+        <ImageView
+            android:id="@+id/mMenu_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_btn" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/mFrag_home_log1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shared_logo1" />
+
+            <ImageView
+                android:id="@+id/mFrag_home_log2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/navbar_logo_cn" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/mFrag_home_scan"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/scan" />
+
+        <ImageView
+            android:id="@+id/mFrag_home_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/mMenu_btn"
+            android:layout_toRightOf="@+id/mMenu_btn"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <com.example.admin.youhuo.view.PullToRefreshView
+        android:id="@+id/mSc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.admin.youhuo.view.PullToRefreshView>
+</LinearLayout>

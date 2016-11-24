@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.youhuo.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/mLine_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mImg_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tabbar_homepage_highlighted_gray" />
+
+            <TextView
+                android:id="@+id/mTv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mLine_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mImg_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tabbar_cart_normal" />
+
+            <TextView
+                android:id="@+id/mTv_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物"
+                android:textColor="#969696" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mLine_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mImg_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tabbar_mine_normal" />
+
+            <TextView
+                android:id="@+id/mTv_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textColor="#969696" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mLine_see"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mImg_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tabbar_see_normal" />
+
+            <TextView
+                android:id="@+id/mTv_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="逛"
+                android:textColor="#969696" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mLine_cate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mImg_cate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tabbar_category_normal" />
+
+            <TextView
+                android:id="@+id/mTv_cate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类"
+                android:textColor="#969696" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mFrag_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/mBottom"
+        android:orientation="vertical"></LinearLayout>
+</RelativeLayout>
